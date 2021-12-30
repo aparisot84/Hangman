@@ -29,14 +29,6 @@ public class main {
         Interface GameInterface = new Interface();
         System.out.println(GameInterface);
 
-
-
-
-
-
-
-
-
         /*
         ReadFile arquivo = new ReadFile();
 

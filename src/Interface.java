@@ -12,7 +12,11 @@ public class Interface {
                 "/            O\n" +
                 "|           /|\\\t\n" +
                 "|           / \\\n" +
-                "|______________";
+                "|______________" +
+                "\n\n" +
+                letrasErradas +
+                "\n\n" +
+                status;
     }
 
 
