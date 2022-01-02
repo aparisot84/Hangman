@@ -7,40 +7,74 @@ public class Interface {
         return desenho;
     }
 
-    public void setDesenho(String desenho) {
-        this.desenho = desenho;
+    public void setDesenho(int indice) {
+        switch (indice) {
+            case 1:
+                this.desenho = "   ___________\n" +
+                        " /           |\n" +
+                        "/            O\n" +
+                        "|           \n" +
+                        "|           \n" +
+                        "|______________";
+                break;
+
+            case 2:
+                this.desenho = "   ___________\n" +
+                        " /           |\n" +
+                        "/            O\n" +
+                        "|           /\n" +
+                        "|           \n" +
+                        "|______________";
+                break;
+
+            case 3:
+                this.desenho = "   ___________\n" +
+                        " /           |\n" +
+                        "/            O\n" +
+                        "|           /|\n" +
+                        "|           \n" +
+                        "|______________";
+                break;
+
+            case 4:
+                this.desenho = "   ___________\n" +
+                        " /           |\n" +
+                        "/            O\n" +
+                        "|           /|\n" +
+                        "|           \n" +
+                        "|______________";
+                break;
+
+            case 5:
+                this.desenho = "   ___________\n" +
+                              " /           |\n" +
+                              "/            O\n" +
+                              "|           /|\n" +
+                              "|           /\\n" +
+                              "|______________";
+                break;
+            case 6:
+                this.desenho = "   ___________\n" +
+                              " /           |\n" +
+                              "/            O\n" +
+                              "|           /|\\n" +
+                              "|           /\\\n" +
+                              "|______________";
+                break;
+
+
+        }
     }
 
-    public String getLetrasErradas() {
-        return letrasErradas;
+        @Override
+        public String toString() {
+            return  desenho +
+                    "\n\n" +
+                    this.letrasErradas +
+                    "\n\n" +
+                    this.status;
+        }
+
+
     }
 
-    public void setLetrasErradas(String letrasErradas) {
-        this.letrasErradas = letrasErradas;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    @Override
-    public String toString() {
-        return  "   ___________\n" +
-                " /           |\n" +
-                "/            O\n" +
-                "|           /|\\\t\n" +
-                "|           / \\\n" +
-                "|______________" +
-                "\n\n" +
-                this.letrasErradas +
-                "\n\n" +
-                this.status;
-    }
-
-
-
-}

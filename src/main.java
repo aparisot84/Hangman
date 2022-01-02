@@ -29,6 +29,22 @@ public class main {
         Interface GameInterface = new Interface();
         System.out.println(GameInterface);
 
+        GameInterface.setDesenho(1);
+        System.out.println(GameInterface);
+
+        GameInterface.setDesenho(2);
+        System.out.println(GameInterface);
+
+        GameInterface.setDesenho(3);
+        System.out.println(GameInterface);
+
+        GameInterface.setDesenho(4);
+        System.out.println(GameInterface);
+
+        GameInterface.setDesenho(4);
+        System.out.println(GameInterface);
+
+
         /*
         ReadFile arquivo = new ReadFile();
 
